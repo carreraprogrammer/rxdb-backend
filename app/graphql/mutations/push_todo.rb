@@ -31,7 +31,7 @@ module Mutations
     private
 
     def conflict_detected?(todo, assumed_state)
-      assumed_state && todo.updatedAt != assumed_state.updatedAt
+      # assumed_state && todo.updated_at != assumed_state.updatedAt
     end
 
     def update_todo_attributes(todo, new_document_state)
